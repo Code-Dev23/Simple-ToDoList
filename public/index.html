@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <!-- Aggiungi il link al file CSS di Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.17/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mx-auto px-4 py-8">
+    <h1 class="text-2xl font-bold mb-4">To-Do List</h1>
+
+    <!-- Form per aggiungere una nuova attività -->
+    <form id="todo-form" class="mb-4 flex space-x-6">
+      <div class="flex items-center mb-2">
+        <label for="todo-input-title" class="mr-2">Titolo:</label>
+        <input type="text" id="todo-input-title" class="border border-gray-300 px-2 py-1">
+      </div>
+      <div class="flex items-center mb-2">
+        <label for="todo-input-description" class="mr-2">Descrizione:</label>
+        <textarea id="todo-input-description" class="border border-gray-300 px-2 py-1"></textarea>
+      </div>
+      <button type="submit" class="bg-blue-500 text-white px-2 py-1 rounded">Aggiungi</button>
+    </form>
+
+    <!-- Lista delle attività -->
+    <ul id="todo-list" class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <!-- Le card delle attività saranno create dinamicamente tramite JavaScript -->
+    </ul>
+  </div>
+
+  <!-- Aggiungi il link al file app.js -->
+  <script src="app.js"></script>
+</body>
+</html>
